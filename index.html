@@ -8,12 +8,24 @@
     <br>
     Question 1: What is the differense between Extensive properties and Intensive properties?<br>
     <input type="radio" name="question1">Intensive properties depend on the amount<br>
-    <input type="radio" name="question1" id="corrct">Extensive properties depend on the amount<br>
+    <input type="radio" name="question1" id="correct1">Extensive properties depend on the amount<br>
     <input type="radio" name="question1">Neither depend on the amount<br>
     <input type="radio" name="question1">Both depend on the amount.<br>
     <br>
-    <input type="submit" name="submit" value="Submit Answer" onclick="alert('correct')">
+    Question 2: What is an example of an intensive property?<br>
+    <input type="radio name="question2"><br>
+    <input type="submit" name="submit" value="submitQuiz" onclick="result()">
+    
+    <script type="text/javascript">
+    function result() {
+    //Body ...
+    var score=0;
+    if (document.getElementById('correct1').checked) 
+    {
+    	score++;
+    }
+    alert(Your Score Is:"+score);
+    </script>
     <br>
     <br>
-    Question 2:
 </body>
